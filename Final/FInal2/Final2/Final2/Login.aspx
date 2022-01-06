@@ -29,7 +29,7 @@
                 <asp:TextBox ID="Email" runat="server"></asp:TextBox>
             </div>
             <div>
-                <asp:TextBox ID="Password" runat="server"></asp:TextBox>
+                <asp:TextBox Type="password" ID="Password" runat="server"></asp:TextBox>
             </div>
             <div>
                 <asp:Button ID="Login" runat="server" Text="Login" OnClick="Login_Click" />
