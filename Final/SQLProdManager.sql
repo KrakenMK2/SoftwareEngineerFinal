@@ -58,5 +58,3 @@ insert into Products(ProductName,Price,LastStocked) values('Lights',15,'2000-10-
 insert into Products(ProductName,Price,LastStocked) values('Washing Machine',150,'2000-10-4');
 insert into Products(ProductName,Price,LastStocked) values('Watch',45,'2000-10-4');
 insert into Products(ProductName,Price,LastStocked) values('Calculator',5,'2000-10-4');
-
-

@@ -27,9 +27,14 @@ namespace Final2
                 string query = "insert into Customers(CustomerName,email,passwords) values('" + Username.Text + "','" + email.Text + "','" + password.Text + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
-                Response.Redirect("Login.aspx");
+                
             }
             con.Close();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
         }
     }
 }

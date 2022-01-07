@@ -23,7 +23,7 @@ namespace Final2
             con.Open();
 
 
-            string DisplayStr = "select * from Products where ProductID = '" + proid.Text + "' or '" + proname +"' or '" + price.Text + "';";
+            string DisplayStr = "select * from Products where ProductID = '" + proid.Text + "';";
             SqlCommand cmd = new SqlCommand(DisplayStr, con);
             SqlDataReader reader = cmd.ExecuteReader();
             Products.DataSource = reader;
@@ -33,17 +33,21 @@ namespace Final2
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            con.Open();
             var Now = DateTime.Now.ToString("yyyy-MM-dd");
             string query = "insert into Products(ProductName, Price, LastStocked) values('" + proname.Text + "'," + price.Text + ",'" + Now + "');";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+            con.Open();
             string query = "delete from Products where ProductID = "+ proid.Text +";";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

@@ -45,7 +45,7 @@
                 <tr>
                     <td class="auto-style1">password</td>
                     <td>
-                        <asp:TextBox ID="password" runat="server"></asp:TextBox>
+                        <asp:TextBox Type="password" ID="password" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -53,7 +53,8 @@
                         <asp:Button ID="Registation" runat="server" Text="Register" OnClick="Registation_Click" />
                     </td>
                     <td>
-                        &nbsp;</td>
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Return" />
+                    </td>
                 </tr>
             </table>
 

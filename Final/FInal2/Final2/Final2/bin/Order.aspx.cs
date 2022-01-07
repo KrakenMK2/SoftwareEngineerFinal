@@ -51,5 +51,10 @@ namespace Final2
             Response.Cookies.Add(cookie);
             Response.Redirect("Receipt.aspx");
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ProductMana.aspx");
+        }
     }
 }

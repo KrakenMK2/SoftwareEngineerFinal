@@ -16,8 +16,8 @@ namespace Final2
         {
             string cookie = Request.Cookies["order"].Value;
             con.Open();
-            string DisplayStr = "select * from OrderDetails where OrderID = " + cookie;
-            SqlCommand cmd = new SqlCommand(DisplayStr, con);
+            string DisplayStr = "select p.ProductName, p.Price, od.Quantity from Products as p LEFT JOIN OrderDetails as od on p.ProductID = od.ProductID where od.OrderID = " + cookie;
+            SqlCommand cmd = new SqlCommand(DisplayStr, con); 
             SqlDataReader reader = cmd.ExecuteReader();
             Receipt.DataSource = reader;
             Receipt.DataBind();
