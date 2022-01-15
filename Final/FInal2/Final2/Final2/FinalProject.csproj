@@ -70,7 +70,6 @@
     <Content Include="bg2.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Register.aspx" />
-    <Content Include="ProductMana.aspx" />
     <Content Include="Web.config" />
     <Content Include="Order.aspx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -113,13 +112,6 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProductMana.aspx.cs">
-      <DependentUpon>ProductMana.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProductMana.aspx.designer.cs">
-      <DependentUpon>ProductMana.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -136,6 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductMana\ProductMana.csproj">
+      <Project>{797c5d6e-854b-4f12-9792-6613597034be}</Project>
+      <Name>ProductMana</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

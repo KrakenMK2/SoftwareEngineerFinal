@@ -1,0 +1,12 @@
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\bin\Debug\ProductMana.exe.config
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\bin\Debug\ProductMana.exe
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\bin\Debug\ProductMana.pdb
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.csprojAssemblyReference.cache
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.Form1.resources
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.Properties.Resources.resources
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.csproj.GenerateResource.cache
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.csproj.CoreCompileInputs.cache
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.exe
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.pdb
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.Form2.resources
+C:\Users\Kraken\Documents\GitHub\SoftwareEngineerFinal\Final\FInal2\Final2\ProductMana\obj\Debug\ProductMana.Form3.resources

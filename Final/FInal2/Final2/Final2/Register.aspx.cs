@@ -24,7 +24,7 @@ namespace Final2
             int passLen = password.MaxLength;
             if (passLen >= 8)
             {
-                string query = "insert into Customers(CustomerName,email,passwords) values('" + Username.Text + "','" + email.Text + "','" + password.Text + "')";
+                string query = "insert into Users(CustomerName,email,passwords,AdminStatus) values('" + Username.Text + "','" + email.Text + "','" + password.Text + "','no')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 

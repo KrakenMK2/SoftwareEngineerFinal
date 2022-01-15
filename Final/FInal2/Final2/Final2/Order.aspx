@@ -66,7 +66,6 @@
                 </asp:DropDownList>
             </p>
             <asp:Button ID="printButton" runat="server" Text="Print" OnClick="printButton_Click" />
-            <asp:Button ID="Button2" runat="server" Text="ProductMana" OnClick="Button2_Click" />
         </div>
     </form>
 </body>

@@ -5,17 +5,19 @@ IF not exists(
 	where name = 'ProdManager'
 )
 
+
 create database [ProdManager]
 go
 use [ProdManager]
 
 
-CREATE TABLE Customers
+CREATE TABLE Users
 (
 	CustomerID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	CustomerName varchar(50) NOT NULL,
 	email varchar(50) not null,
-	passwords varchar(50) not null
+	passwords varchar(50) not null,
+	AdminStatus varchar(5) not null
 );
 
 create table Orders(
@@ -23,7 +25,7 @@ create table Orders(
 	CustomerID int not null,
 	OrderStatus varchar(50) not null,
 	Payment varchar(50) not null,
-	FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+	FOREIGN KEY (CustomerID) REFERENCES Users(CustomerID)
 )
 
 create table Products(
@@ -43,10 +45,10 @@ create table OrderDetails(
 )
 
 
-insert into Customers(CustomerName,email,passwords) values('Jack','jck@mail','jacko');
-insert into Customers(CustomerName,email,passwords) values('Sonia','soni@mail','sonarica');
-insert into Customers(CustomerName,email,passwords) values('Jane','jan@mail','janebon');
-insert into Customers(CustomerName,email,passwords) values('John','josh@mail','johmsmith');
+insert into Users(CustomerName,email,passwords,AdminStatus) values('Jack','jck@mail','jacko','yes');
+insert into Users(CustomerName,email,passwords,AdminStatus) values('Sonia','soni@mail','sonarica','no');
+insert into Users(CustomerName,email,passwords,AdminStatus) values('Jane','jan@mail','janebon','no');
+insert into Users(CustomerName,email,passwords,AdminStatus) values('John','josh@mail','johmsmith','yes');
 
 insert into Products(ProductName,Price,LastStocked) values('TV',300,'2000-10-4');
 insert into Products(ProductName,Price,LastStocked) values('Laptop',500,'2000-10-4');

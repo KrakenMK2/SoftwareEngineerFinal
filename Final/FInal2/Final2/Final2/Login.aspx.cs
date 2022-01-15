@@ -21,7 +21,7 @@ namespace Final2
         protected void Login_Click(object sender, EventArgs e)
         {
             con.Open();
-            string Myquery = "select * from Customers where email = '" + Email.Text + "' and passwords = '" + Password.Text + "'";
+            string Myquery = "select * from Users where email = '" + Email.Text + "' and passwords = '" + Password.Text + "'";
             SqlDataAdapter dd = new SqlDataAdapter(Myquery, con);
             var dc = new DataTable();
             dd.Fill(dc);
